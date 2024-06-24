@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: clip;
+  height: 100vh;
+  background-color: var(--mainTheme);
+  color: #fff;
+}
+
+.App-Content {
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.App-ContentLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.App-ContentRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.App-ContentRightSplit {
+  display: flex;
+  gap: 10px;
+}
+
+.Icon-w {
+  display: flex;
+}
+
+.Icon-w>:nth-child(1) {
+  position: relative;
+  z-index: 200;
+  animation: spinRight 5s linear infinite;
+}
+
+.Icon-w>:nth-child(2) {
+  position: relative;
+ 
+  z-index: 200;
+  animation: spinLeft 5s linear infinite;
+}
+
+
+/* Responsive Screen Adjustment */
+@media (max-width: 600px){
+
+  .App-ContentRightSplit {
+    flex-direction: column;
+  }
+}
+
+
+/* Animations */
+@keyframes spinRight{
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+
+@keyframes spinLeft{
+  100%{-webkit-transform: rotate(-360deg);}
+}

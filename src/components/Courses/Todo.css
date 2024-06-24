@@ -1,0 +1,14 @@
+.course-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.course-deleteBtn {
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  border: none;
+}

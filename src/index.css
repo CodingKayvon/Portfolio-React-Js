@@ -1,0 +1,13 @@
+:root {
+    --mainTheme: #23293d;
+    --primaryBoxTheme: #121930;
+    --secondary: rgba(36, 32, 37, 0.856);
+    --tertiary: rgba(146, 11, 180, 0.411); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

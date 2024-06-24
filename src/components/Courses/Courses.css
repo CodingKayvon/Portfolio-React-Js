@@ -1,0 +1,26 @@
+.courses-w {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: var(--primaryBoxTheme);
+  overflow: hidden;
+  gap: 10px;
+}
+
+.course-title {
+  border-bottom: 1px solid #eee;
+  padding-top: 5px;
+}
+
+
+/* Responsive Screen Adjustment */
+@media (max-width: 600px){
+  .courses-w {
+    height: 140px;
+    width: 100%;
+  }
+  
+}

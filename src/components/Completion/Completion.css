@@ -1,0 +1,24 @@
+.completion-w {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 600px;
+  border-radius: 10px;
+  row-gap: 10px;
+  background-color: var(--primaryBoxTheme);
+  padding: 5px 0px 10px 0px;
+}
+
+.completion-w>span {
+  border-bottom: 1px solid #eee;
+}
+
+
+/* Responsive Screen Adjustment */
+@media (max-width: 600px){
+  .completion-w {
+    width: 300px;
+  }
+}
